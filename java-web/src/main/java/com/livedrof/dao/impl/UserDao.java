@@ -13,7 +13,7 @@ public class UserDao implements IUserDao {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    public User addUser(User user) {
+    public User insertUser(User user) {
         return null;
     }
 

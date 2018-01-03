@@ -5,7 +5,7 @@ import com.livedrof.dto.User;
 import java.util.List;
 
 public interface IUserDao {
-    User addUser(User user);
+    User insertUser(User user);
 
     void deleteUser(Integer userId);
 
