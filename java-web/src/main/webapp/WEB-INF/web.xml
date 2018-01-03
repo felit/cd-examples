@@ -62,5 +62,4 @@
     <session-config><!--会话超时配置，单位分钟-->
         <session-timeout>360</session-timeout>
     </session-config>
-
 </web-app>

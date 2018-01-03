@@ -14,4 +14,20 @@
                      	http://www.springframework.org/schema/tx/spring-tx-4.3.xsd"
        default-autowire="byName" default-lazy-init="false">
     <context:property-placeholder location="jdbc.properties"></context:property-placeholder>
+
+    <bean id="springDSN"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+    <context:component-scan base-package="com.livedrof.dao" />
+
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate" abstract="false" lazy-init="false"
+          autowire="default">
+        <property name="dataSource">
+            <ref bean="springDSN"/>
+        </property>
+    </bean>
 </beans>

@@ -2,10 +2,17 @@ package com.livedrof.dao.impl;
 
 import com.livedrof.dao.IUserDao;
 import com.livedrof.dto.User;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public class UserDao implements IUserDao {
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
+
     public User addUser(User user) {
         return null;
     }
