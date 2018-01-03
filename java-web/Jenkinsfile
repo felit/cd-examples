@@ -1,0 +1,19 @@
+node {
+   stage('Preparation') { // for display purposes
+      // Get some code from a GitHub repository
+      git 'https://github.com/felit/cd-examples.git'
+   }
+   stage('Build') {
+      echo '使用maven编译java代码'
+      sh 'cd java-web;mvn clean package'
+      echo 'maven编译完成'
+   }
+
+   stage('Test') {
+       echo 'test code...'
+       sh 'cd restful-test; newman run weipan-viewer.postman_collection.json'
+   }
+   stage('Deploy') {
+       echo 'deploy code to server'
+   }
+}
