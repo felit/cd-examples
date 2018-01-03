@@ -13,5 +13,5 @@
                      	http://www.springframework.org/schema/tx
                      	http://www.springframework.org/schema/tx/spring-tx-4.3.xsd"
        default-autowire="byName" default-lazy-init="false">
-
+    <context:property-placeholder location="jdbc.properties"></context:property-placeholder>
 </beans>
