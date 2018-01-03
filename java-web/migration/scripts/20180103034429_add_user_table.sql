@@ -22,8 +22,7 @@ CREATE TABLE user (
   nickname VARCHAR(128),
   age      INTEGER,
   PRIMARY KEY (userid)
-)
-
+);
 
 -- //@UNDO
 -- SQL to undo the change goes here.
