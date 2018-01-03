@@ -26,7 +26,12 @@ public class UserDao implements IUserDao {
     }
 
     public User getUser(Integer userId) {
-        return null;
+        User user = new User();
+        user.setUserId(1);
+        user.setUsername("username");
+        user.setNickname("nickname");
+        user.setAge(33);
+        return user;
     }
 
     public List<User> getUsers(List<Integer> userIds) {

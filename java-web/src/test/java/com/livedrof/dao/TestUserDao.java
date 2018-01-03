@@ -2,6 +2,7 @@ package com.livedrof.dao;
 
 import com.livedrof.dao.impl.UserDao;
 import com.livedrof.dto.User;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,9 @@ public class TestUserDao {
     @Test
     public void testGetUser() throws Exception {
         User user = userDao.getUser(1);
-        System.out.println(user);
+        Assert.assertEquals(1, user.getUserId());
+        Assert.assertNotNull(user.getUsername());
+        Assert.assertNotNull(user.getNickname());
+        Assert.assertNotEquals(user.getAge(), 0);
     }
 }
