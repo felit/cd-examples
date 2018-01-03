@@ -1,6 +1,6 @@
-package com.livedrof.dao.impl;
+package com.livedrof.unit.dao.impl;
 
-import com.livedrof.dao.IUserDao;
+import com.livedrof.unit.dao.IUserDao;
 import com.livedrof.dto.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;

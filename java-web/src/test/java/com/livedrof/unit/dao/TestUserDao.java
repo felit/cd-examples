@@ -1,6 +1,6 @@
-package com.livedrof.dao;
+package com.livedrof.unit.dao;
 
-import com.livedrof.dao.impl.UserDao;
+import com.livedrof.unit.dao.impl.UserDao;
 import com.livedrof.dto.User;
 import org.junit.Assert;
 import org.junit.Test;

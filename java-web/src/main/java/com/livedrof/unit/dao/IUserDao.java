@@ -1,4 +1,4 @@
-package com.livedrof.dao;
+package com.livedrof.unit.dao;
 
 import com.livedrof.dto.User;
 

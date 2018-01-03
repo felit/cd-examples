@@ -1,4 +1,4 @@
-package com.livedrof.service;
+package com.livedrof.unit.service;
 
 public interface IUserService {
 }
