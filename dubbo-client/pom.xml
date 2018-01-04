@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.livedrof.cd.com.livedrof.cd.dubbo</groupId>
-    <artifactId>DubboDemo</artifactId>
+    <artifactId>dubbo-client</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
